@@ -41,7 +41,9 @@ class Config {
     if (config) return this;
 
     // Store the config root for other things to find
-    configRoot = base;
+    configRoot = path.resolve(...[...arguments].slice(0, -1));
+    // Make sure options is the last thing in the arguments
+    options = [...arguments].slice(1).pop();
 
     // The list of configs to load
     const configs = [
