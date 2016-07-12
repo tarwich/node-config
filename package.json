@@ -21,7 +21,11 @@
   },
   "homepage": "https://github.com/tarwich/node-config#readme",
   "dependencies": {
-    "eslint": "3.0.1",
-    "eslint-config-google": "0.6.0"
+    "chalk": "^1.1.3",
+    "lodash": "^4.13.1"
+  },
+  "devDependencies": {
+    "eslint": "^3.0.1",
+    "eslint-config-google": "^0.6.0"
   }
 }
