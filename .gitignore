@@ -1,0 +1,12 @@
+# ----------[ Application Things ]----------------------------------------
+node_modules
+
+# ----------[ Metadata ]----------------------------------------
+
+# OSX
+.DS_Store
+# Windows
+desktop.ini
+thumbs.db
+# VS Code
+.vscode

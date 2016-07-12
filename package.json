@@ -1,0 +1,27 @@
+{
+  "name": "config",
+  "version": "1.0.0",
+  "description": "Simple configuration loader for nodejs",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tarwich/node-config.git"
+  },
+  "keywords": [
+    "config",
+    "extend",
+    "env",
+    "environment"
+  ],
+  "author": "Samuel Dillow",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tarwich/node-config/issues"
+  },
+  "homepage": "https://github.com/tarwich/node-config#readme",
+  "dependencies": {
+    "eslint": "3.0.1",
+    "eslint-config-google": "0.6.0"
+  }
+}
