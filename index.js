@@ -95,16 +95,16 @@ class Config {
         process.env[config.environmentMap[key]] = process.env[key];
     }
 
-    // Load any settings from the environment
     Object.keys(process.env).forEach(key => {
       let parts = key.split('.');
+      let end = parts.slice(-1)[0];
       let base = parts.slice(0, -1).reduce((base, key) => {
-        // Ensure this path points to something
-        if (!base[key]) base[key] = {};
+        if (typeof base[key] !== 'object') base[key] = {};
         return base[key];
       }, config);
       // Assign the value
       if (parts.length > 1) base[parts.slice(-1)[0]] = process.env[key];
+      else if (end in base) base[end] = process.env[key];
     });
 
     // Show the config
